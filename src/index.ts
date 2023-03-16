@@ -1,7 +1,8 @@
-import { init, exit } from "myPackage";
+import { init, exit } from "./myPackage";
 
-init({
-  url: "true",
-});
-
-exit(1);
+console.log(
+  init({
+    debug: true,
+    url: "https://www.naver.com",
+  })
+);
